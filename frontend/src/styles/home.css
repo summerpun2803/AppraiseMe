@@ -1,0 +1,112 @@
+.home .homediv1 {
+  height: 112px;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 5px 5px 80px;
+  gap: 32px;
+}
+
+.homediv1 p {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 29px;
+  padding-top: 33px;
+}
+
+.homediv1 img {
+  height: 100px;
+  width: 150px;
+}
+
+.homediv3 {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px;
+  border-color: #cdcdcd;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px;
+  margin-top: 80px;
+  max-height: 7000px;
+  width: 95%;
+}
+
+.experiences {
+  width: 40%;
+  height: 100%;
+  padding: 12px;
+  border-radius: 32px, 0px, 0px, 0px;
+  border-right: solid 1px;
+  border-width: 0px;
+  border-color: #cdcdcd;
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.experiences div{
+  width: 100%;
+}
+
+.experiences div p{
+  width: 60%;
+}
+.experiences div a{
+  display: flex;
+  justify-content: end;
+  width: 40%;
+}
+
+.about{
+  width: 55%;
+  height: 100%;
+}
+
+
+@media (max-width:650px){
+  .homediv3{
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .homediv3 div{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .about{
+    border: none !important;
+  }
+  .about-bio{
+    border-top: solid #cdcdcd !important;
+    border-width: 0px;
+    padding-top: 10px !important;
+  }
+  .reviews-div{
+    border: none !important;
+  }
+  .experiences div p{
+    text-align: center;
+  }
+}
+
+@media(max-width: 440px){
+  .homediv1{
+    padding-left: 10px !important;
+    margin-bottom: 130px !important;
+  }
+  .homediv1 img{
+    margin: 0px !important;
+  }
+  .homediv1 p{
+    font-size: 25px;
+  }
+  .homediv3{
+    margin: auto;
+  }
+}

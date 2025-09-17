@@ -1,0 +1,242 @@
+.details {
+  display: inline-flex;
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  width: 700px;
+}
+
+.details h1 {
+  width: 65%;
+  color: #000;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.details-form {
+  width: 100%;
+  display: flex;
+  padding: 32px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 16px;
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #4a4a4a;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.details-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.preferred-pronouns{
+  width: 49%;
+}
+
+.pronouns{
+  width: 100% !important;
+}
+
+.pronouns input{
+  width: 100%;
+}
+
+.names {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+#continue-details button{
+  width: 50%;
+}
+
+.names input {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 16px;
+  border: 1px solid #d9d9d9;
+}
+
+.names input:focus {
+  outline: none;
+}
+.dob-gender {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.dob{
+  width: 49%;
+  margin-right: 5px;
+}
+
+.dob input {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 16px;
+  border: 1px solid #d9d9d9;
+}
+
+.gender{
+  width: 49%;
+}
+
+.continue {
+  width: 100% ;
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.continue-btn {
+
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  border-radius: 32px;
+  background: #3818fd;
+
+  border-width: 0px;
+
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#cont{
+  width: 40%;
+}
+
+.continue h4 {
+  width: 100%;
+  color: #4a4a4a;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.faq-div {
+  display: flex;
+  width: 100%;
+  padding: 16px 0px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+@media (max-width:525px){
+  .details h1{
+    width: 100%;
+    font-size:xx-large;
+  }
+  .details{
+    gap: 30px;
+    width: 100%;
+  }
+  .details-form{
+    padding: 32px 15px;
+  }
+}
+
+@media (max-width: 465px){
+  .details{
+    gap: 10px;
+    margin: 25px 0px 20px 0px;
+  }
+
+  #continue-details{
+    flex-direction: column;
+  }
+  #continue-details button{
+    width: 100%;
+  }
+
+}
+
+@media (max-width:365px){
+  .details h1{
+    font-size: 30px;
+  }
+  .details-form{
+    padding: 32px 10px;
+  }
+  .dob-gender{
+    flex-direction: column;
+  }
+  .dob{
+    width: 100%;
+  }
+  .gender{
+    width: 100%;
+  }
+  .names{
+    flex-direction: column;
+  }
+  .names input{
+    width: 100%;
+  }
+  .preferred-pronouns{
+    width: 100%;
+  }
+  .continue{
+    width: 100% !important;
+    flex-direction: column;
+  }
+  #cont{
+    width: 100%;
+  }
+}
+
+@media(max-width:280px){
+  .details h1{
+    font-size: 26px;
+  }
+}
+
+@media(max-width:250px){
+  .details h1{
+    font-size: 22px;
+  }
+}

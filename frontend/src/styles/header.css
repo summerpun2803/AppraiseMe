@@ -1,0 +1,172 @@
+.header-div {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  border-bottom: solid #d9d9d9;
+  stroke-width: 1px;
+}
+
+.dropdown{
+  display: none;
+}
+
+.header-div button {
+  background-color: #ffffff;
+  color: #4a4a4a;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.header-div h2 {
+  color: #3818fd;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  margin-right: 15px;
+}
+
+#signup {
+  background-color: #3818fd;
+  color: #ffffff;
+  border-radius: 32px;
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+#signup a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#signin a {
+  color: #3818fd;
+  text-decoration: none;
+}
+
+#search-input {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-color: text inactive;
+  border-radius: 20px;
+  padding: 7px;
+  margin-left: 28px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.suggestions li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+#search-button {
+  margin-left: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1120px) {
+  .header-div{
+    gap: 2px;
+  }
+  #search-input{
+    width: 200px;
+    margin-left: 5px;
+    height: 28px;
+  }
+  #signup{
+    padding: 12px 20px;
+  }
+  .search-container{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 6px;
+    margin-right: 6px;
+    gap: 5px;
+  }
+  #search-button{
+    padding: 2px;
+    margin: 4px;
+  }
+  .header-div button {
+    font-size: 14px; /* Adjusted font size for smaller screens */    
+  }
+}
+
+@media (max-width:890px) {
+  .header-div{
+    gap: 10px;
+  }
+  .header-div button {
+    font-size: 14px;   
+    padding: 2px;
+  }
+  #signup{
+    padding: 9px 14px;
+  }
+  #search-input{
+    width: 130px;
+    margin-left: 5px;
+    height: 26px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px){
+  #edit{display: none;}
+  #wam{display: none;}
+  #reviews{display: none;}
+  .dropdown{
+    display: block;
+  }
+}
+
+@media (max-width: 440px){
+  .header-div h2 {
+    margin-right: 0;
+    display: none;
+  }
+  .header-div {
+    display: flex;
+    gap: 0;
+  }
+}
